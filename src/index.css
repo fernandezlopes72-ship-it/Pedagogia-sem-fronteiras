@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --theme-primary: #065f46;
+  --theme-primary-light: #059669;
+  --theme-accent: #d97706;
+  --theme-accent-light: #fef3c7;
+  --theme-cta: #10b981;
+  --theme-cta-hover: #059669;
+  --theme-topbar: #064e3b;
+  --theme-surface-light: #f0fdf4;
+  --theme-surface-border: #bbf7d0;
+  --theme-chip-bg: #dcfce7;
+}
+
+@theme {
+  --font-display: "Baloo 2", cursive, sans-serif;
+  --font-body: "Nunito", sans-serif;
+  --color-brand-purple: var(--theme-primary);
+  --color-brand-purple-light: var(--theme-primary-light);
+  --color-brand-lilac: var(--theme-chip-bg);
+  --color-brand-lilac-dark: var(--theme-surface-border);
+  --color-brand-pink: var(--theme-accent);
+  --color-brand-pink-light: var(--theme-accent-light);
+  --color-brand-green: var(--theme-cta);
+  --color-brand-green-dark: var(--theme-cta-hover);
+  --color-brand-yellow: #ffd84d;
+  --color-brand-ink: #24163d;
+  --color-brand-ink-light: #4a3b66;
+  --color-brand-muted: #6e6482;
+  --color-brand-cream: #fff9f3;
+}
+
+body {
+  font-family: "Nunito", system-ui, -apple-system, sans-serif;
+  color: #24163d;
+  background-color: #fffdfb;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: "Baloo 2", system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.015em;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 25px -5px rgba(230, 64, 127, 0.4), 0 10px 30px -10px rgba(91, 43, 181, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px 0px rgba(230, 64, 127, 0.65), 0 15px 40px -8px rgba(91, 43, 181, 0.45);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.glow-featured {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4eefd;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3b1e8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7b3fe4;
+}
