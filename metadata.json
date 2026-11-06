@@ -2,5 +2,7 @@
   "name": "Portal Renda Extra - Materiais Pedagógicos PLR",
   "description": "Receba mais de 25 mil materiais pedagógicos prontos para revender com licença PLR. Lucre 100% revendendo kits digitais pelo celular.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
