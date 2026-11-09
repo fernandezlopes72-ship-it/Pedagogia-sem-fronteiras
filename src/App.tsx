@@ -36,7 +36,7 @@ export default function App() {
 
   const [checkoutConfig, setCheckoutConfig] = useState<CheckoutConfig>(() => {
     try {
-      const saved = localStorage.getItem("portal_renda_extra_links_v2");
+      const saved = localStorage.getItem("portal_renda_extra_links_v3");
       if (saved) {
         return JSON.parse(saved);
       }
@@ -76,7 +76,7 @@ export default function App() {
   const handleSaveConfig = (newConfig: CheckoutConfig) => {
     setCheckoutConfig(newConfig);
     try {
-      localStorage.setItem("portal_renda_extra_links_v2", JSON.stringify(newConfig));
+      localStorage.setItem("portal_renda_extra_links_v3", JSON.stringify(newConfig));
     } catch {
       // ignore
     }
@@ -85,7 +85,7 @@ export default function App() {
   const handleResetConfig = () => {
     setCheckoutConfig(DEFAULT_CHECKOUT_CONFIG);
     try {
-      localStorage.removeItem("portal_renda_extra_links_v2");
+      localStorage.removeItem("portal_renda_extra_links_v3");
     } catch {
       // ignore
     }

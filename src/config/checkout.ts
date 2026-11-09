@@ -10,9 +10,9 @@ export interface CheckoutConfig {
 
 export const DEFAULT_CHECKOUT_CONFIG: CheckoutConfig = {
   // Plano Premium principal (R$ 27,90)
-  premiumUrl: "https://pay.cakto.com.br/3qjhgt6",
+  premiumUrl: "https://checkout.wiven.com.br/checkout/cmw9hxex10cf101oknm3jocqe?offer=XX7WI8G",
   // Plano Básico (R$ 10,00)
-  basicUrl: "https://pay.cakto.com.br/s464hfr_1288773",
+  basicUrl: "https://checkout.wiven.com.br/checkout/cmw9hxex10cf101oknm3jocqe?offer=H08EEBF",
   // Upgrade OTO no modal (R$ 19,90 = +R$ 9,90)
-  otoUpgradeUrl: "https://pay.cakto.com.br/iix4t6o",
+  otoUpgradeUrl: "https://checkout.wiven.com.br/checkout/cmw9hxex10cf101oknm3jocqe?offer=71CLOKO",
 };
